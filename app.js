@@ -28,3 +28,8 @@ app.get('/login', (req, res) => {
 app.listen(puerto, () => {
     console.log('Aplicación esuchando en puerto 3001');
 });
+
+// post
+app.post('/register', (req, res) => {
+    res.sendFile(__dirname + '/views/home.html');
+})
